@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X O game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <div>
+            <h3 >X O Game</h3>
+            <div class="box">
+                <h3 id="title">next step : X</h3>
+                <div class="content">
+                    <div class="small-box special"  id="item1" onclick="game(this.id)"></div>
+                    <div class="small-box special"  id="item2" onclick="game(this.id)"></div>
+                    <div class="small-box special" id="item3" onclick="game(this.id)" ></div>
+                </div>
+                <div class="content">
+                    <div class="small-box special"  id="item4" onclick="game(this.id)"></div>
+                    <div class="small-box special" id="item5" onclick="game(this.id)"></div>
+                    <div class="small-box special" id="item6" onclick="game(this.id)"></div>
+                </div>
+                <div class="content">
+                    <div class="small-box special"  id="item7" onclick="game(this.id)"></div>
+                    <div class="small-box special"  id="item8" onclick="game(this.id)"></div>
+                    <div class="small-box special"  id="item9" onclick="game(this.id)"></div>
+                </div>
+
+            </div>
+
+            <div class="content">
+                <p>player X : <span id="player1"></span></p>
+                <p>player O : <span id="player2"></span></p>
+
+            </div>
+            <div class="content">
+                <button onclick="newGame()">New Game</button>
+                <button onclick="draw()">Draw</button>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
